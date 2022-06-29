@@ -37,7 +37,7 @@ void logoViewBase::setupScreen()
 
 }
 
-//Handles delays
+//Handles tick based events
 void logoViewBase::handleTickEvent()
 {
     if(interaction1Counter > 0)
@@ -51,4 +51,5 @@ void logoViewBase::handleTickEvent()
             application().gotomainScreenWipeTransitionSouth();
         }
     }
+
 }

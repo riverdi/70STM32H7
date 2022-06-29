@@ -712,6 +712,11 @@
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/Core/Src/usb_otg.c</locationURI>
 		</link>
 		<link>
+			<name>Application/User/Core/Inc/nema_hal_threadx.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CM7/Core/Inc/nema_hal_threadx.c</locationURI>
+		</link>
+		<link>
 			<name>Application/User/FATFS/App/fatfs.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/FATFS/App/fatfs.c</locationURI>
@@ -757,11 +762,6 @@
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/target/TouchGFXHAL.cpp</locationURI>
 		</link>
 		<link>
-			<name>Application/User/TouchGFX/target/generated/HardwareMJPEGDecoder.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/target/generated/HardwareMJPEGDecoder.cpp</locationURI>
-		</link>
-		<link>
 			<name>Application/User/TouchGFX/target/generated/OSWrappers.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/target/generated/OSWrappers.cpp</locationURI>
@@ -780,11 +780,6 @@
 			<name>Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp</locationURI>
-		</link>
-		<link>
-			<name>Application/User/TouchGFX/target/generated/tgfx_jpeg_utils.c</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/target/generated/tgfx_jpeg_utils.c</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/cameraPresenter.cpp</name>

@@ -2292,17 +2292,18 @@
       "Width": 1024,
       "Height": 600
     },
-    "SelectedColorDepth": 16,
+    "SelectedColorDepth": 24,
     "StartupScreenName": "logo",
     "SelectedStartupLanguage": "GB",
     "Skin": "Blue",
     "TouchGfxPath": "../Middlewares/ST/touchgfx",
     "UIPath": ".",
     "AvailableColorDepths": [
-      16
+      24
     ],
     "AvailableLCDs": {
-      "16": "LCD16bpp"
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
     },
     "AvailableSections": [
       "ExtFlashSection",
@@ -2316,8 +2317,8 @@
     ],
     "PhysicalButtons": [],
     "FrameworkFeatures": {
-      "LCD16bpp": {
-        "Id": "LCD16bpp",
+      "LCD24bpp": {
+        "Id": "LCD24bpp",
         "IsEnabled": true
       }
     },
@@ -2337,5 +2338,5 @@
     "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
     "OptionalComponents": []
   },
-  "Version": "4.19.1"
+  "Version": "4.20.0"
 }

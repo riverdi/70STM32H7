@@ -7,34 +7,35 @@
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE;
 
+// Remap all strings
 TEXT_LOCATION_FLASH_PRAGMA
 KEEP extern const uint32_t indicesGb[] TEXT_LOCATION_FLASH_ATTRIBUTE = {
-    63, // T___SingleUse_59XA
-    171, // T___SingleUse_A691
-    90, // T___SingleUse_XYU6
-    35, // T___SingleUse_9Z6Z
-    171, // T___SingleUse_KH36
-    90, // T___SingleUse_I9PN
-    0, // T___SingleUse_OWWH
-    171, // T___SingleUse_8G3K
-    90, // T___SingleUse_Q149
-    171, // T___SingleUse_SL0J
-    90, // T___SingleUse_5PCJ
-    171, // T___SingleUse_OSHC
-    90, // T___SingleUse_D3HO
-    171, // T___SingleUse_QSYT
-    90, // T___SingleUse_V08M
-    171, // T___SingleUse_298H
-    90, // T___SingleUse_GBJG
-    173, // T___SingleUse_GP0X
-    173, // T___SingleUse_4JF3
-    166, // T___SingleUse_CWX1
-    166, // T___SingleUse_SHX2
-    134, // T___SingleUse_SWFI
-    114, // T___SingleUse_YYCO
-    159, // T___SingleUse_OF2B
-    125, // T___SingleUse_NEB0
-    102, // T___SingleUse_HMWW
-    143, // T___SingleUse_CNGM
-    151 // T___SingleUse_3TSQ
+    63,  // T___SINGLEUSE_59XA: "Here should settings page."
+    171, // T___SINGLEUSE_A691: "<>"
+    90,  // T___SINGLEUSE_XYU6: "Dee's House"
+    35,  // T___SINGLEUSE_9Z6Z: "There are no notifications."
+    171, // T___SINGLEUSE_KH36: "<>"
+    90,  // T___SINGLEUSE_I9PN: "Dee's House"
+    0,   // T___SINGLEUSE_OWWH: "Here should be configuration page."
+    171, // T___SINGLEUSE_8G3K: "<>"
+    90,  // T___SINGLEUSE_Q149: "Dee's House"
+    171, // T___SINGLEUSE_SL0J: "<>"
+    90,  // T___SINGLEUSE_5PCJ: "Dee's House"
+    171, // T___SINGLEUSE_OSHC: "<>"
+    90,  // T___SINGLEUSE_D3HO: "Dee's House"
+    171, // T___SINGLEUSE_QSYT: "<>"
+    90,  // T___SINGLEUSE_V08M: "Dee's House"
+    171, // T___SINGLEUSE_298H: "<>"
+    90,  // T___SINGLEUSE_GBJG: "Dee's House"
+    173, // T___SINGLEUSE_GP0X: "o"
+    173, // T___SINGLEUSE_4JF3: "o"
+    166, // T___SINGLEUSE_CWX1: "22.4"
+    166, // T___SINGLEUSE_SHX2: "22.4"
+    134, // T___SINGLEUSE_SWFI: "Upstairs"
+    114, // T___SINGLEUSE_YYCO: "Downstairs"
+    159, // T___SINGLEUSE_OF2B: "Garage"
+    125, // T___SINGLEUSE_NEB0: "Bathroom"
+    102, // T___SINGLEUSE_HMWW: "Living Room"
+    143, // T___SINGLEUSE_CNGM: "Bedroom"
+    151  // T___SINGLEUSE_3TSQ: "Kitchen"
 };

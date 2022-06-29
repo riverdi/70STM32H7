@@ -46,12 +46,12 @@ void MX_LTDC_Init(void)
   hltdc.Init.PCPolarity = LTDC_PCPOLARITY_IPC;
   hltdc.Init.HorizontalSync = 0;
   hltdc.Init.VerticalSync = 0;
-  hltdc.Init.AccumulatedHBP = 88;
+  hltdc.Init.AccumulatedHBP = 160;
   hltdc.Init.AccumulatedVBP = 23;
-  hltdc.Init.AccumulatedActiveW = 1368;
-  hltdc.Init.AccumulatedActiveH = 823;
-  hltdc.Init.TotalWidth = 1380;
-  hltdc.Init.TotalHeigh = 824;
+  hltdc.Init.AccumulatedActiveW = 1184;
+  hltdc.Init.AccumulatedActiveH = 623;
+  hltdc.Init.TotalWidth = 1344;
+  hltdc.Init.TotalHeigh = 624;
   hltdc.Init.Backcolor.Blue = 0;
   hltdc.Init.Backcolor.Green = 0;
   hltdc.Init.Backcolor.Red = 0;
@@ -60,17 +60,17 @@ void MX_LTDC_Init(void)
     Error_Handler();
   }
   pLayerCfg.WindowX0 = 0;
-  pLayerCfg.WindowX1 = 1280;
+  pLayerCfg.WindowX1 = 1024;
   pLayerCfg.WindowY0 = 0;
-  pLayerCfg.WindowY1 = 800;
+  pLayerCfg.WindowY1 = 600;
   pLayerCfg.PixelFormat = LTDC_PIXEL_FORMAT_RGB888;
   pLayerCfg.Alpha = 255;
   pLayerCfg.Alpha0 = 0;
   pLayerCfg.BlendingFactor1 = LTDC_BLENDING_FACTOR1_CA;
   pLayerCfg.BlendingFactor2 = LTDC_BLENDING_FACTOR2_CA;
   pLayerCfg.FBStartAdress = 0;
-  pLayerCfg.ImageWidth = 1280;
-  pLayerCfg.ImageHeight = 800;
+  pLayerCfg.ImageWidth = 1024;
+  pLayerCfg.ImageHeight = 600;
   pLayerCfg.Backcolor.Blue = 0;
   pLayerCfg.Backcolor.Green = 0;
   pLayerCfg.Backcolor.Red = 0;
@@ -98,11 +98,11 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* ltdcHandle)
   /** Initializes the peripherals clock
   */
     PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC;
-    PeriphClkInitStruct.PLL3.PLL3M = 10;
-    PeriphClkInitStruct.PLL3.PLL3N = 197;
-    PeriphClkInitStruct.PLL3.PLL3P = 2;
-    PeriphClkInitStruct.PLL3.PLL3Q = 2;
-    PeriphClkInitStruct.PLL3.PLL3R = 4;
+    PeriphClkInitStruct.PLL3.PLL3M = 12;
+    PeriphClkInitStruct.PLL3.PLL3N = 269;
+    PeriphClkInitStruct.PLL3.PLL3P = 6;
+    PeriphClkInitStruct.PLL3.PLL3Q = 6;
+    PeriphClkInitStruct.PLL3.PLL3R = 8;
     PeriphClkInitStruct.PLL3.PLL3RGE = RCC_PLL3VCIRANGE_0;
     PeriphClkInitStruct.PLL3.PLL3VCOSEL = RCC_PLL3VCOWIDE;
     PeriphClkInitStruct.PLL3.PLL3FRACN = 0;

@@ -148,7 +148,7 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
 
   /* creation of VideoTask */
-  VideoTaskHandle = osThreadNew(videoTaskFunc, NULL, &VideoTask_attributes);
+ // VideoTaskHandle = osThreadNew(videoTaskFunc, NULL, &VideoTask_attributes);
 
   /* creation of TouchGFXTask */
   TouchGFXTaskHandle = osThreadNew(TouchGFX_Task, NULL, &TouchGFXTask_attributes);

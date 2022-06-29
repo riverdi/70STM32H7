@@ -51,7 +51,8 @@ MEMORY
   RAM_D3 (xrw)   : ORIGIN = 0x38000000, LENGTH = 64K
   ITCMRAM (xrw)  : ORIGIN = 0x00000000, LENGTH = 64K
   QUADSPI (r)	 : ORIGIN = 0x90000000,	LENGTH = 32M
-  SDRAM   (xrw)  : ORIGIN = 0xD0400000,  LENGTH = 4M
+  SDRAM   (xrw)  : ORIGIN = 0xD0000000,  LENGTH = 4M
+    SDRAM2   (xrw)  : ORIGIN = 0xD0400000,  LENGTH = 4M
 }
 
 /* Sections */
@@ -188,8 +189,14 @@ SECTIONS
 
   .ARM.attributes 0 : { *(.ARM.attributes) }
   
-
-  
+TouchGFX_Framebuffer :
+ 	{
+		*(TouchGFX_Framebuffer TouchGFX_Framebuffer.*)
+		*(.gnu.linkonce.r.*)
+        . = ALIGN(0x4);
+	} >SDRAM
+	
+	 
     ExtFlashSection :
 	{
 		*(ExtFlashSection ExtFlashSection.*)

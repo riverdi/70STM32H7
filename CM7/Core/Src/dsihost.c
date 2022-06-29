@@ -117,7 +117,7 @@ void MX_DSIHOST_DSI_Init(void)
     Error_Handler();
   }
   VidCfg.VirtualChannelID = 0;
-  VidCfg.ColorCoding = DSI_RGB565;
+  VidCfg.ColorCoding = DSI_RGB888;
   VidCfg.LooselyPacked = DSI_LOOSELY_PACKED_DISABLE;
   VidCfg.Mode = DSI_VID_MODE_BURST;
   VidCfg.PacketSize = HACT;

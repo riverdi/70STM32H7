@@ -8,7 +8,7 @@
 #include <texts/TextKeysAndLanguages.hpp>
 #include <touchgfx/Texts.hpp>
 #include <touchgfx/hal/HAL.hpp>
-#include <platform/driver/lcd/LCD16bpp.hpp>
+#include<platform/driver/lcd/LCD24bpp.hpp>
 #include <gui/logo_screen/logoView.hpp>
 #include <gui/logo_screen/logoPresenter.hpp>
 #include <gui/main_screen/mainView.hpp>
@@ -36,7 +36,7 @@ FrontendApplicationBase::FrontendApplicationBase(Model& m, FrontendHeap& heap)
 {
     touchgfx::HAL::getInstance()->setDisplayOrientation(touchgfx::ORIENTATION_LANDSCAPE);
     touchgfx::Texts::setLanguage(GB);
-    reinterpret_cast<touchgfx::LCD16bpp&>(touchgfx::HAL::lcd()).enableTextureMapperAll();
+    reinterpret_cast<touchgfx::LCD24bpp&>(touchgfx::HAL::lcd()).enableTextureMapperAll();
 }
 
 /*
